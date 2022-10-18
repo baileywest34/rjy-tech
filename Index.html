@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RJY Tech</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>RJ Young technician temporary website:</h1> <br>
+            <h2>Send the files at the end of the day to your Manager.</h2>
+        </div>
+
+    </header>
+    <main>
+        <div>
+
+            <!--Add few elements to the form-->
+
+            <div>
+                <input type="text" id="SC" placeholder="SC Number" />
+            </div>
+            <div>
+                <input type="text" id="customer" placeholder="Customer Name" />
+            </div>
+            <div>
+                <input type="text" id="EID" placeholder="Equipment ID" />
+            </div>
+            <div>
+                <input type="text" id="dispatch" placeholder="Dispatch Miles" />
+                <button id="dispatch-btn" onclick="getElementById('dispatch-time').innerHTML=Date()">Dispatch</button>
+                <textarea id="dispatch-time"></textarea>
+            </div>
+            <div>
+                <input type="text" id="arrive-btn" placeholder="Arive Miles" />
+                <button id="arrive-btn" onclick="getElementById('arrive-time').innerHTML=Date()">Arrive</button>
+                <textarea id="arrive-time"></textarea>
+            </div>
+            <div>
+                <button id="depart-btn" onclick="getElementById('depart-time').innerHTML=Date()">depart</button>
+                <textarea id="depart-time"></textarea>
+            </div>
+            <div>
+                <input type="text" id="counter" placeholder="Counter" />
+            </div>
+
+            <div>
+                <textarea id="notes" name="msg" placeholder="Notes and misc..." style="height:100px"></textarea>
+            </div>
+            <div>
+                <textarea id="parts" name="msg" placeholder="enter parts used..." style="height:100px"></textarea>
+            </div>
+            <div>
+                <select id="call-status">
+                    <option selected value="">-- Choose the option --</option>
+                    <option value="complete">Complete</option>
+                    <option value="incomplete">Incomplete</option>
+                </select>
+            </div>
+            <div>
+                <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </main>
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
